@@ -18,4 +18,4 @@ for i in ticket_management:
           print(i["ticket_id"],"\t\t",i["emp_name"],"\t",i["issue_type"],"\t",i["issue_description"],"\t\t",i["status"],"\t",i["priority"])
 
 
-       
+print()  
