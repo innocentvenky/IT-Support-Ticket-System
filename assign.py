@@ -34,15 +34,17 @@ for i in ticket_management:
 		print("_________________________________________________________________________________________")
 print("\n Update Employee Ticket Workload \n")
 employee_name = input("Enter employee name : ")
-new_workload = int(input("Enter new workload : "))
+workload = 0
 for i in ticket_management:
 	if i["emp_name"] == employee_name:
-		i["workload"] = new_workload
+		workload +=1
 		print("\n\n_________________________________________________________________________________________")
 		print("Ticket_id\temp_name\tissue_type\tissue_description\tstatus")
 		print("_________________________________________________________________________________________")
 		print(i["ticket_id"],"\t\t",i["emp_name"],"\t", i["issue_type"],"\t",i["issue_description"],"\t\t",i["status"])
 		print("_________________________________________________________________________________________")
+print("\t\t\t\t Workload \t\t",workload)
+print("_________________________________________________________________________________________")
 
  
 print("\n Generate Assignment Summary Report  By Employee Name \n")
